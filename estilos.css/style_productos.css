@@ -1,6 +1,20 @@
 header{
     background-color: #BBBBBB;
+    padding: 20px 0;
 }
+
+.caja{
+    width: 940px; /*1280px la mayoria de pantallas tienen ese formato* 940 es aprox 70% de esa medida*/
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
 
 nav li{
     display: inline;
