@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--reseteo de estilos por defecto del navegador-->
-    <link rel="stylesheet" href="/estilos.css/reset.css" />
-    <!--Nuestros propios estilos-->
-    <link rel="stylesheet" href="/estilos.css/style.css" />
     <title>Contacto - Barbería Alura</title>
+    <link rel="stylesheet" href="/estilos.css/reset.css" />
+    <link rel="stylesheet" href="/estilos.css/style.css" />
   </head>
   <body>
     <header>
@@ -16,7 +13,7 @@
         <h1>
           <img
             src="/imagenes/imagenes-servicios/logo.png"
-            alt="logo-Barbería"
+            alt="Logo de la Barbería Alura"
           />
         </h1>
         <nav>
@@ -32,7 +29,8 @@
       <form>
         <label for="nombreapellido">Nombre y Apellido</label>
         <input type="text" id="nombreapellido" class="input-padron" required />
-        <label for="correoelectronico">correo electronico</label>
+
+        <label for="correoelectronico">Correo Electrónico</label>
         <input
           type="email"
           id="correoelectronico"
@@ -40,28 +38,30 @@
           required
           placeholder="email@dominio.com"
         />
-        <label for="telefono">telefono</label>
+
+        <label for="telefono">Teléfono</label>
         <input
           type="tel"
           id="telefono"
           class="input-padron"
           required
-          placeholder="(xx) xxxx xxxx"
+          placeholder="(XX) XXXX XXXX"
         />
-        <label for="mensaje">telefono</label>
+
+        <label for="mensaje">Mensaje</label>
         <textarea
-          name=""
-          id=""
           cols="70"
           rows="10"
           id="mensaje"
           class="input-padron"
           required
         ></textarea>
+
         <fieldset>
-          <legend>¿Cómo le gustaria que lo contactemos?</legend>
-          <label for="radio-email">
-            <input
+          <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+          <label for="radio-email"
+            ><input
               type="radio"
               name="contacto"
               value="email"
@@ -75,7 +75,7 @@
               name="contacto"
               value="telefono"
               id="radio-telefono"
-            />telefono</label
+            />Teléfono</label
           >
 
           <label for="radio-whatsapp"
@@ -85,11 +85,12 @@
               value="whatsapp"
               id="radio-whatsapp"
               checked
-            />whatsapp</label
+            />WhatsApp</label
           >
         </fieldset>
+
         <fieldset>
-          <legend>¿En cual horario prefiere ser atentido?</legend>
+          <legend>¿En cuál horario prefiere ser atendido?</legend>
           <select>
             <option>Mañana</option>
             <option>Tarde</option>
@@ -101,33 +102,39 @@
           ><input type="checkbox" checked />¿Le gustaría recibir novedades de la
           Barbería Alura?</label
         >
-        <input class="enviar" type="submit" value="Enviar Formulario" />
+
+        <input type="submit" value="Enviar formulario" class="enviar" />
       </form>
+
       <table>
-        <tr>
-          <td>Día</td>
-          <td>Horario</td>
-        </tr>
-        <tr>
-          <td>Lunes</td>
-          <td>08h - 20h</td>
-        </tr>
-        <tr>
-          <td>Miércoles</td>
-          <td>08h - 20h</td>
-        </tr>
-        <tr>
-          <td>Viernes</td>
-          <td>08h - 20h</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>08h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td>08h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>08h ~ 20h</td>
+          </tr>
+        </tbody>
       </table>
     </main>
     <footer>
       <img
         src="/imagenes/imagenes-servicios/logo-blanco.png"
-        alt="logo-barberia"
+        alt="Logo de la Barbería Alura"
       />
-      <p class="copyright">&copy Copyright Barberia Alura - 2023</p>
+      <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
     </footer>
   </body>
 </html>
